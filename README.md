@@ -9,7 +9,7 @@
 <h3 align="center">Admin/Inventory/Stores/Service in Go</h3>
 
   <p align="center">
-   This Structure Demo is use for testing and demostration to understad, the full Demo Structure please visit the diagram: https://github.com/Sholontla/structure-demo-configurations/blob/main/diagram-demo.pdf
+   This Structure Demo is use for testing and demostration to understad, the full Demo Structure please visit the diagram: https://github.com/Sholontla/admin-store-manager/blob/main/arch-high-level-overview.pdf
     <br />
     <br />
   </p>
@@ -19,78 +19,81 @@
 
 ## About The Project
 
-The main project are structur by:
+The project are structure by:
 Admin Service:
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+  <p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Built With
 
-- Java
-- Spring
+- Golang (Go)
+- Fiber (http framework)
+- JWT/v4
+- MongoDB
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+Project OverView:
+. The Adimin Services will take care of the Administration, Configuration, CRUD operations on AdminUsers.
+. From the Stores side will take care of the creation / Destroy of the store, generate and renew the correct certificates for a new store or existing store, create te Admin User for every store and aver employee per store.
+. All the logs will be send to the Logger service and with the help of grafana, prometheus and protmail will have metrics and controll of the logs.
 
-<!-- GETTING STARTED -->
+Store Service:
 
-## Services:
+  <p align="right">(<a href="#top">back to top</a>)</p>
 
-1. Config Server:
+### Built With
 
-- First service to run.
-- This service is Cloud Native connections
+- Golang (Go)
+- Fiber (http framework)
+- JWT/v4
+- MongoDB
 
-2. Eureka Discovery Server:
+Project OverView:
+. The store service will take care of the sales/cashier oprtations and will save the raw data into a cassandra cluster and send throw a Kafka producer the raw data to the Python Analysis services where a consumer will take care from precessing and apply analytic logic to the data and shows into a Dashboard (Html and bootrstrap with the help of Chart.js) and generate the visualizations.
+Once the data is processed will be saved into PostgreSQL.
+. The data consumer will have buffer messages, if somethig happen will buffer the data until the consumr come back online.
+. The dat will store in a Redis docker container and all the messages will be cashed for the data constancy.
+. The inventory will be send throw a gRPC server from maain INventory to every store depending on every store and the inventory data as well will be chashed.
+All the logs will be send to the Logger service and with the help of grafana, prometheus and protmail will have metrics and controll of the logs.
 
-- Second service to run.
-- Eureka Discovery Servers
+Logger Service:
 
-3. Spring GateWay:
+  <p align="right">(<a href="#top">back to top</a>)</p>
 
-- Third service to run.
-- manage port services assign by Eureka Spring Server
-- port: 6000
+### Built With
 
-4. Security Service:
+- Golang (Go)
+- Fiber (http framework)
+- JWT/v4
+- MongoDB
 
-- Fourth service to run.
-- AES Encryption / Obfuscation service
-- Data filter by group
-- Data Base: Postgre Sql
-- port: manage by Eureka Server
+Project OverView:
+. The store service will take care of the sales/cashier oprtations and will save the raw data into a cassandra cluster and send throw a Kafka producer the raw data to the Python Analysis services where a consumer will take care from precessing and apply analytic logic to the data and shows into a Dashboard (Html and bootrstrap with the help of Chart.js) and generate the visualizations.
+Once the data is processed will be saved into PostgreSQL.
+. The data consumer will have buffer messages, if somethig happen will buffer the data until the consumr come back online.
+. The dat will store in a Redis docker container and all the messages will be cashed for the data constancy.
+. The inventory will be send throw a gRPC server from maain INventory to every store depending on every store and the inventory data as well will be chashed.
+All the logs will be send to the Logger service and with the help of grafana, prometheus and protmail will have metrics and controll of the logs.
 
-5. configuration Data Base:
+Inventory Service:
 
-- Fifth service to run.
-- Configuration of Databases
-- Data Base: Local
-- port: manage by Eureka Server
+  <p align="right">(<a href="#top">back to top</a>)</p>
 
-6. Secure Vault Demo:
+### Built With
 
-- Sixth service to run.
-- Keep Secure and confidentail data
-- Data Base: Mongo DB
-- port: manage by Eureka Server
+- Golang (Go)
+- Fiber (http framework)
+- JWT/v4
+- MongoDB
 
-### Endpoints and Swagger
+Project OverView:
+. The store service will take care of the sales/cashier oprtations and will save the raw data into a cassandra cluster and send throw a Kafka producer the raw data to the Python Analysis services where a consumer will take care from precessing and apply analytic logic to the data and shows into a Dashboard (Html and bootrstrap with the help of Chart.js) and generate the visualizations.
+Once the data is processed will be saved into PostgreSQL.
+. The data consumer will have buffer messages, if somethig happen will buffer the data until the consumr come back online.
+. The dat will store in a Redis docker container and all the messages will be cashed for the data constancy.
+. The inventory will be send throw a gRPC server from maain INventory to every store depending on every store and the inventory data as well will be chashed.
+All the logs will be send to the Logger service and with the help of grafana, prometheus and protmail will have metrics and controll of the logs.
 
-- localhost:6000/security-ws/security
-- localhost:6000/security-ws/security/login
-- localhost:6000/security-ws/security/status/check
-- localhost:6000/security-ws/security/encryption
-- localhost:6000/security-ws/security/obfuscation
-- localhost:6000/security-ws/security/{id}
-- localhost:6000/security-ws/security/group?group=(select group: 0,1,2,3,4,5,6,7,8,9)
-- localhost:6000/security-ws/security/actuator/\*\*
-- localhost:6000/security-ws/actuator/circuitbreakerevents
--
-- To see the Swagger of: secure-vault-demo
-- on Eureka Server the assign ports with out any "http client" go to: localhost:8000 and select the "SECURE-VAULT-DEMO-WS" service.
-- change default route and enter:
-- http://localhost:[port manage by Eureka Server]/swagger-ui/index.html
-
-### Prerequisites
+Frameworks, toools, and other components add to this project:
 
 Virtualization / Containers
 
