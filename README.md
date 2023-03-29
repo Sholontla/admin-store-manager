@@ -115,4 +115,7 @@ For testing and demostrations purposes.
 
 Gerardo Ruiz Bustani - solbustani@gmail.com - 442 488 6193
 
+This project is not finsih this a personal project apply with time the knowledge get on the different projects I been working.
+I wnat to see othe project still inconulded visit:
+where gRPC, and a kafka producer and consumer i set up.
 Project Link: [https://github.com/Sholontla](https://github.com/Sholontla/structure-demo)
