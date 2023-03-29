@@ -1,0 +1,43 @@
+{
+    "order_complete": {
+        "inventory": {
+            "products": {
+                "product_title": "",
+                "product_classification": "",
+                "product_category": "",
+                "product_brand": "",
+                "product_model": "",
+                "product_material": "",
+                "product_description": "",
+                "product_image": "",
+                "product_price": 0.0,
+                "product_quantity": 0,
+                "product_serial_number": "",
+                "supplier_name": "",
+                "sku": ""
+            }
+        },
+        "store_information": {
+            "store_name": "",
+            "store_code": "",
+            "store_phone": "",
+            "store_email": "",
+            "store_address": {
+                "store_street": "",
+                "store_number": "",
+                "store_zip_code": "",
+                "store_area_code": ""
+            }
+        },
+        "employee": {
+            "PersonalInfo": {
+                "first_name": "",
+                "last_name": "",
+                "employee_email": ""
+            },
+            "area": "",
+            "designation": "",
+            "manager": ""
+        }
+    }
+}

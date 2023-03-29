@@ -1,0 +1,4 @@
+{
+    "proto": "protoc -Iinternal/proto --go_out=internal/proto  --go_opt=module=service/producer/demo/internal/proto  --go-grpc_out=internal/proto  --go-grpc_opt=module=service/producer/demo/internal/proto internal/proto/producer.proto",
+    "logger_proto": "protoc -Iinternal/proto/loggs --go_out=internal/proto/loggs  --go_opt=module=service/producer/demo/internal/proto/loggs  --go-grpc_out=internal/proto/loggs  --go-grpc_opt=module=service/producer/demo/internal/proto/loggs internal/proto/loggs/loggs.proto"
+}

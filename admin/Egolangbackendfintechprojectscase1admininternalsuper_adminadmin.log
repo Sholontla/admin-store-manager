@@ -1,0 +1,2 @@
+message 2023/03/29 13:55:59 config.go:106: Log before sending: {"level":"info","ts":1680098159.224496,"caller":"admin/admin_handler.go:41","msg":"AdminRegister function running ..."}
+message 2023/03/29 15:37:59 config.go:106: Log before sending: {"level":"info","ts":1680104279.1843314,"caller":"admin/admin_handler.go:41","msg":"AdminRegister function running ..."}

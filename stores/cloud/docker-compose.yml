@@ -1,0 +1,32 @@
+version: '3.9'
+
+services:
+  go_admin:
+    build:
+      context: .
+      dockerfile: E:\\golang\\backend\\fintech\\projects\\case1\\admin\\Dockerfile
+      args:
+        - ADMIN_DIR= 'E:\\golang\\backend\\fintech\\projects\\case1\\admin'
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.go_admin.rule=Host(http://localhost`)"
+      - "traefik.http.services.go_admin.loadbalancer.server.port=1000"
+    deploy:
+      replicas: 4
+    environment:
+      CASSANDRA_CONTACT_POINTS: cassandra-cluster-1,cassandra-cluster-2
+
+  cassandra-cluster-1:
+    image: cassandra:latest
+    environment:
+      - "CASSANDRA_CLUSTER_NAME=cassandra-cluster-1"
+
+  cassandra-cluster-2:
+    image: cassandra:latest
+    environment:
+      - "CASSANDRA_CLUSTER_NAME=cassandra-cluster-2"
+
+
+networks:
+  default:
+    driver: bridge

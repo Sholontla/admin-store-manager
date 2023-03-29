@@ -1,0 +1,3 @@
+{
+ "message: ": "Log before sending: {\"level\":\"info\",\"ts\":1678407275.3355856,\"caller\":\"super_admin/super_admin_user_handler.go:40\",\"msg\":\"AdminRegister function running ...\"}\n"
+}

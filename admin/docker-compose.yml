@@ -1,0 +1,54 @@
+version: '3.9'
+services:
+  admin_backend:
+    restart: always
+    container_name: admin_backend
+    build: .
+    ports:
+      - 8001:8001
+    networks: 
+      - case1_demo
+    volumes:
+      - .:/app
+    depends_on:
+      - servadmindb
+
+  servadmindb:
+    image: mongo:latest
+    restart: always
+    container_name: container_servicedemo
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=servicedemo
+      - MONGO_INITDB_ROOT_PASSWORD=servicedemo
+    volumes:
+      - ./mongodb:/db/servicedemo
+    ports:
+      - "27018:27017"
+    networks: 
+      - case1_demo
+
+  mongo-express:
+    image: mongo-express
+    container_name: mongo-express-admin
+    restart: always
+    ports:
+      - "28082:8081"
+    networks: 
+      - case1_demo
+    environment:
+      - ME_CONFIG_MONGODB_SERVER=servadmindb
+      - ME_CONFIG_BASICAUTH_USERNAME=servicedemo
+      - ME_CONFIG_BASICAUTH_PASSWORD=servicedemo
+      # - ME_CONFIG_MONGODB_AUTH_DATABASE=servicedemo
+      - ME_CONFIG_MONGODB_ADMINUSERNAME=servicedemo
+      - ME_CONFIG_MONGODB_ADMINPASSWORD=servicedemo
+      - ME_CONFIG_MONGODB_URL=mongodb://servicedemo:servicedemo@servadmindb:27017/ 
+    depends_on:
+      - servadmindb
+
+volumes:
+  mongodb_data_volume:
+  
+networks:
+  case1_demo:
+    name: net-case1-demo

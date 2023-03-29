@@ -1,0 +1,16 @@
+version: '3.9'
+services:
+  inventory_backend:
+    restart: always
+    container_name: inventory_backend
+    build: .
+    ports:
+      - 8001:8001
+    networks: 
+      - case1_demo
+    volumes:
+      - .:/app
+
+networks:
+  case1_demo:
+    name: net-case1-demo

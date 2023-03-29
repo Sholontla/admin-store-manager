@@ -1,0 +1,23 @@
+# Configuration file for OWASP ZAP
+# https://www.zaproxy.org/docs/docker/cli/
+# https://www.zaproxy.org/docs/docker/full-scan/
+# https://github.com/zaproxy/community-scripts/blob/master/docker/zap-baseline.py
+
+# Start ZAP in daemon mode
+docker run -d -u zap -p 8080:8080 -i owasp/zap2docker-weekly zap.sh -daemon -port 8080 -host 0.0.0.0 -config api.disablekey=true
+
+# Wait for ZAP to start
+docker exec zap zap-cli -p 8080 status -t 120 && echo "ZAP is up!"
+
+# Define the ZAP scan policy
+docker cp my_policy.policy zap:/zap/wrk/policies/my_policy.policy
+docker exec zap zap-cli -p 8080 importpolicy -name my_policy -type blacklist -file /zap/wrk/policies/my_policy.policy
+
+# Run a spider on the target website
+docker exec zap zap-cli -p 8080 spider http://myproject:8000
+
+# Run an active scan using the defined policy
+docker exec zap zap-cli -p 8080 active-scan http://myproject:8000 -r my_policy -l Low -t 60
+
+# Stop ZAP
+docker stop zap

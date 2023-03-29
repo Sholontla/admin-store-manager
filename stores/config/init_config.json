@@ -1,0 +1,36 @@
+{
+    "fiber-server": {
+        "port": 8002,
+        "host": "localhost"
+    }, 
+
+    "mongodb-server": {
+        "port": 27017,
+        "host": "localhost",
+        "username": "root",
+        "password": "root",
+        "db": "mongodb",
+        "collection": "mongodb"
+    },
+
+    "redis-server": {
+        "port": 6379,
+        "host": "localhost"
+    },
+
+    "grpc-client": {
+        "port": "50051",
+        "host": "localhost",
+        "tls": false
+    },
+
+    "mtls-certs-server": {
+        "cert": "/var/lib/",
+        "serv": "/home/ubuntu/certs/"
+    },
+
+    "proto": {
+        "proto": "protoc -Iinternal/proto/admin_orders --go_out=internal/proto/admin_orders  --go_opt=module=service/stores/case1/internal/proto/admin_orders  --go-grpc_out=internal/proto/admin_orders  --go-grpc_opt=module=service/stores/case1/internal/proto/admin_orders internal/proto/admin_orders/admin_order.proto",
+        "logger_proto": "protoc -Iinternal/proto/loggs --go_out=internal/proto/loggs  --go_opt=module=service/producer/demo/internal/proto/loggs  --go-grpc_out=internal/proto/loggs  --go-grpc_opt=module=service/producer/demo/internal/proto/loggs internal/proto/loggs/loggs.proto"
+    }
+}

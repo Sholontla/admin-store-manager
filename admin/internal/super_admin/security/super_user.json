@@ -1,0 +1,14 @@
+{
+    "super_user":
+        {
+            "user_name": "superAdmin",
+            "password": "$2a$12$LE2SjLWi.pthw8bZKFX94OuAN2i6MILyNndQSqzzYthNdwopPYdSa"
+        },
+    "config_path": 
+        {
+            "workera": "E:\\projects\\transactions\\datasource\\json\\fanout\\a.json",
+            "workerb": "E:\\projects\\transactions\\datasource\\json\\fanout\\b.json",
+            "workerc": "E:\\projects\\transactions\\datasource\\json\\fanout\\c.json",
+            "workerd": "E:\\projects\\transactions\\datasource\\json\\fanout\\d.json"
+        }
+ }

@@ -1,0 +1,24 @@
+message 2023/03/09 18:25:47 config.go:71: map[message: :Log before sending: {"level":"info","ts":1678407947.7436,"caller":"super_admin/super_admin_user_handler.go:40","msg":"AdminRegister function running ..."}
+]
+message 2023/03/09 18:27:09 config.go:69: Log before sending: {"level":"info","ts":1678408029.5716166,"caller":"super_admin/super_admin_user_handler.go:40","msg":"AdminRegister function running ..."}
+message 2023/03/09 18:27:10 config.go:69: Log before sending: {"level":"info","ts":1678408030.3341365,"caller":"super_admin/super_admin_user_handler.go:40","msg":"AdminRegister function running ..."}
+message 2023/03/09 18:27:10 config.go:69: Log before sending: {"level":"info","ts":1678408030.9100654,"caller":"super_admin/super_admin_user_handler.go:40","msg":"AdminRegister function running ..."}
+message 2023/03/09 18:27:11 config.go:69: Log before sending: {"level":"info","ts":1678408031.1780484,"caller":"super_admin/super_admin_user_handler.go:40","msg":"AdminRegister function running ..."}
+message 2023/03/09 18:27:11 config.go:69: Log before sending: {"level":"info","ts":1678408031.2791147,"caller":"super_admin/super_admin_user_handler.go:40","msg":"AdminRegister function running ..."}
+message 2023/03/09 18:27:11 config.go:69: Log before sending: {"level":"info","ts":1678408031.6921327,"caller":"super_admin/super_admin_user_handler.go:40","msg":"AdminRegister function running ..."}
+message 2023/03/09 18:27:11 config.go:69: Log before sending: {"level":"info","ts":1678408031.971819,"caller":"super_admin/super_admin_user_handler.go:40","msg":"AdminRegister function running ..."}
+message 2023/03/09 18:27:12 config.go:69: Log before sending: {"level":"info","ts":1678408032.239653,"caller":"super_admin/super_admin_user_handler.go:40","msg":"AdminRegister function running ..."}
+message 2023/03/09 18:27:12 config.go:69: Log before sending: {"level":"info","ts":1678408032.4753213,"caller":"super_admin/super_admin_user_handler.go:40","msg":"AdminRegister function running ..."}
+message 2023/03/09 18:27:12 config.go:69: Log before sending: {"level":"info","ts":1678408032.7039042,"caller":"super_admin/super_admin_user_handler.go:40","msg":"AdminRegister function running ..."}
+message 2023/03/09 18:27:12 config.go:69: Log before sending: {"level":"info","ts":1678408032.886628,"caller":"super_admin/super_admin_user_handler.go:40","msg":"AdminRegister function running ..."}
+message 2023/03/09 18:27:13 config.go:69: Log before sending: {"level":"info","ts":1678408033.060642,"caller":"super_admin/super_admin_user_handler.go:40","msg":"AdminRegister function running ..."}
+message 2023/03/09 18:27:13 config.go:69: Log before sending: {"level":"info","ts":1678408033.2568848,"caller":"super_admin/super_admin_user_handler.go:40","msg":"AdminRegister function running ..."}
+message 2023/03/09 18:27:13 config.go:69: Log before sending: {"level":"info","ts":1678408033.4452453,"caller":"super_admin/super_admin_user_handler.go:40","msg":"AdminRegister function running ..."}
+message 2023/03/09 18:27:13 config.go:69: Log before sending: {"level":"info","ts":1678408033.6406245,"caller":"super_admin/super_admin_user_handler.go:40","msg":"AdminRegister function running ..."}
+message 2023/03/09 18:27:13 config.go:69: Log before sending: {"level":"info","ts":1678408033.8150966,"caller":"super_admin/super_admin_user_handler.go:40","msg":"AdminRegister function running ..."}
+message 2023/03/09 18:27:14 config.go:69: Log before sending: {"level":"info","ts":1678408034.00782,"caller":"super_admin/super_admin_user_handler.go:40","msg":"AdminRegister function running ..."}
+message 2023/03/09 18:27:14 config.go:69: Log before sending: {"level":"info","ts":1678408034.1992297,"caller":"super_admin/super_admin_user_handler.go:40","msg":"AdminRegister function running ..."}
+message 2023/03/09 18:27:14 config.go:69: Log before sending: {"level":"info","ts":1678408034.3487859,"caller":"super_admin/super_admin_user_handler.go:40","msg":"AdminRegister function running ..."}
+message 2023/03/09 18:27:14 config.go:69: Log before sending: {"level":"info","ts":1678408034.5408967,"caller":"super_admin/super_admin_user_handler.go:40","msg":"AdminRegister function running ..."}
+message 2023/03/09 18:27:14 config.go:69: Log before sending: {"level":"info","ts":1678408034.723068,"caller":"super_admin/super_admin_user_handler.go:40","msg":"AdminRegister function running ..."}
+message 2023/03/09 18:27:14 config.go:69: Log before sending: {"level":"info","ts":1678408034.9108546,"caller":"super_admin/super_admin_user_handler.go:40","msg":"AdminRegister function running ..."}

@@ -1,0 +1,110 @@
+{
+    "inventory": {
+        "inventory_Product": [{
+            "product_title": "Teeeeesting Product",
+            "product_classification": "Clothing",
+            "product_category": "Shirts",
+            "product_brand": "Brand Name",
+            "product_model": "Model XYZ",
+            "product_material": "Cotton",
+            "product_description": "This is a sample product",
+            "product_image": "https://example.com/image.jpg",
+            "product_price": 19.99,
+            "product_quantity": 10,
+            "product_serial_number": "1234567890",
+            "supplier_name": "Supplier Name",
+            "sku": "SKU123"
+        },
+            {
+            "product_title": "Example Product",
+            "product_classification": "Clothing",
+            "product_category": "Shirts",
+            "product_brand": "Brand Name",
+            "product_model": "Model XYZ",
+            "product_material": "Cotton",
+            "product_description": "This is a sample product",
+            "product_image": "https://example.com/image.jpg",
+            "product_price": 19.99,
+            "product_quantity": 10,
+            "product_serial_number": "1234567890",
+            "supplier_name": "Supplier Name",
+            "sku": "SKU123"
+        },
+            {
+            "product_title": "Example Product",
+            "product_classification": "Clothing",
+            "product_category": "Shirts",
+            "product_brand": "Brand Name",
+            "product_model": "Model XYZ",
+            "product_material": "Cotton",
+            "product_description": "This is a sample product",
+            "product_image": "https://example.com/image.jpg",
+            "product_price": 19.99,
+            "product_quantity": 10,
+            "product_serial_number": "1234567890",
+            "supplier_name": "Supplier Name",
+            "sku": "SKU123"
+        },
+            {
+            "product_title": "Example Product",
+            "product_classification": "Clothing",
+            "product_category": "Shirts",
+            "product_brand": "Brand Name",
+            "product_model": "Model XYZ",
+            "product_material": "Cotton",
+            "product_description": "This is a sample product",
+            "product_image": "https://example.com/image.jpg",
+            "product_price": 19.99,
+            "product_quantity": 10,
+            "product_serial_number": "1234567890",
+            "supplier_name": "Supplier Name",
+            "sku": "SKU123"
+        },
+            {
+            "product_title": "Example Product",
+            "product_classification": "Clothing",
+            "product_category": "Shirts",
+            "product_brand": "Brand Name",
+            "product_model": "Model XYZ",
+            "product_material": "Cotton",
+            "product_description": "This is a sample product",
+            "product_image": "https://example.com/image.jpg",
+            "product_price": 19.99,
+            "product_quantity": 10,
+            "product_serial_number": "1234567890",
+            "supplier_name": "Supplier Name",
+            "sku": "SKU123"
+        },
+            {
+            "product_title": "Example Product",
+            "product_classification": "Clothing",
+            "product_category": "Shirts",
+            "product_brand": "Brand Name",
+            "product_model": "Model XYZ",
+            "product_material": "Cotton",
+            "product_description": "This is a sample product",
+            "product_image": "https://example.com/image.jpg",
+            "product_price": 19.99,
+            "product_quantity": 10,
+            "product_serial_number": "1234567890",
+            "supplier_name": "Supplier Name",
+            "sku": "SKU123"
+        }
+
+        ]
+
+    },
+    "general_information": {
+        'is_promotion': false
+    },
+    "employee": {
+        "personal_info": {
+            "first_name": "John",
+            "last_name": "Doe",
+            "employee_email": "johndoe@example.com"
+        },
+        "area": "Sales",
+        "designation": "Sales Associate",
+        "manager": "Jane Smith",
+    }
+}

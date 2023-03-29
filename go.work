@@ -1,0 +1,9 @@
+go 1.19
+
+use (
+	./admin
+	./inventory
+	./logger
+	./main_network
+	./stores
+)

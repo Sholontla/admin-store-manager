@@ -1,0 +1,34 @@
+syntax = "proto3";
+
+package stores;
+
+option go_package = "service/stores/case1/internal/proto/admin_orders";
+
+message RequestOrderStoreInventory {
+  string order_id = 1;
+  string order_hash = 2;
+  string created_at = 3;
+  repeated RequestInventory inventory = 4;
+}
+
+message RequestInventory {
+  string sku = 1;
+  int64 quantity = 2;
+}
+
+message ResponseOrderStoreInventory {
+  string order_id = 1;
+  string order_hash = 2;
+  string created_at = 3;
+  repeated ResponseInventory inventory = 4;
+}
+
+message ResponseInventory {
+  string sku = 1;
+  int64 quantity = 2;
+}
+
+service RequestOrderStoreInventoryService {
+  rpc StreamOrderStoreInventory(stream RequestOrderStoreInventory)
+      returns (stream ResponseOrderStoreInventory);
+}

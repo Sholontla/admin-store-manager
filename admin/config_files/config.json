@@ -1,0 +1,51 @@
+{
+    "config_path": 
+        {
+            "workera": "E:\\projects\\transactions\\datasource\\json\\fanout\\a.json",
+            "workerb": "E:\\projects\\transactions\\datasource\\json\\fanout\\b.json",
+            "workerc": "E:\\projects\\transactions\\datasource\\json\\fanout\\c.json",
+            "workerd": "E:\\projects\\transactions\\datasource\\json\\fanout\\d.json"
+        },
+    "config_db": 
+        {
+            "postgre_user": "admin",
+            "postgre_password": "admin",
+            "postgre_host": "admin",
+            "postgre_port": "5432",
+            "postgre_schema": "admin",
+            "postgre_sslmode": "disable"
+        },
+
+        "grpc_server1": {
+            "host": "admin_backend",
+            "port": "50051",
+            "tls": false
+        },
+        "grpc_server2": {
+            "host": "customer2_backend",
+            "port": "50052",
+            "tls": false
+        },
+        "grpc_server3": {
+            "host": "customer3_backend",
+            "port": "50053",
+            "tls": false
+        },
+        "grpc_server4": {
+            "host": "customer4_backend",
+            "port": "50054",
+            "tls": false
+        },
+        "grpc_server5": {
+            "host": "customer5_backend",
+            "port": "50055",
+            "tls": false
+        },
+
+        "config_grpc_path": 
+        {
+            "cert_File": "internal/tls/ca.crt"        
+        }
+}
+
+

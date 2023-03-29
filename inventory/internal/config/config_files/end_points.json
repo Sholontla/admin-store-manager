@@ -1,0 +1,56 @@
+[
+    {
+        "producer_id": "producer1",
+        "producer_message": "producer1",
+        "producer_service_area": "producer1",
+        "producer_created_at": "producer1",
+        "producer_message_id": "producer1",
+        "host": "producer1",
+        "client": "producer1",
+        "ip": "producer1",
+        "port": "producer1",
+        "information_created_at": "producer1",
+        "message_id": "producer1",
+        "message": "producer1",
+        "ravanue": "producer1",
+        "data_producer": "producer1",
+        "user": "producer1",
+        "message_created_at": "producer1",
+        "data_producer_id": "producer1",
+        "product": "producer1",
+        "name": "producer1",
+        "category": "producer1",
+        "sub_category": "producer1",
+        "price": "producer1",
+        "quantity": "producer1",
+        "supplier": "producer1",
+        "description": "producer1",
+        "gender": "producer1"
+    },
+
+    {
+        "producer_id": "producer1",
+        "producer_message": {
+            "producer_message_id": "producer1",
+            "host": "producer1",
+            "client": "producer1",
+            "ip": "producer1",
+            "port": "producer1",
+            "DataProducer": {
+                "data_producer_id": "producer1",
+                "product": "producer1",
+                "name": "producer1",
+                "category": "producer1",
+                "sub_category": "producer1",
+                "price": "producer1",
+                "quantity": "producer1",
+                "supplier": "producer1",
+                "description": "producer1",
+                "gender": "producer1"
+            },
+            "information_created_at": "producer1"
+        },
+        "producer_service_area": "producer1",
+        "producer_created_at": "producer1"
+    }
+]

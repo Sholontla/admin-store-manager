@@ -1,0 +1,11 @@
+{
+ "id": "000000000000000000000000",
+ "admin_user_name": "name1",
+ "admin_user_last_name": "name1",
+ "admin_user_email": "name",
+ "password": "1234578",
+ "created_at": "12345789",
+ "updated_at": "",
+ "permissions": "super_admin",
+ "role": false
+}
